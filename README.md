@@ -1,0 +1,2 @@
+# Portal-Cafeteria-Oslo
+Este proyecto desarrolla un portal publicitario de un sitio web tipo responsivo, en donde se emplean diferentes estilos y estructuras en CSS. En él se muestra diferentes aplicaciones de propiedades como float y positions, herramientas decorativas tales como: fondos, sombras, tipografías entre otras. Y se caracteriza por manejar una navegación tipo responsiva con la aplicación de retículas flexibles y media queries para resoluciones de Móvil, Tablet y Ordenador, además posee una interacción con javascript.
