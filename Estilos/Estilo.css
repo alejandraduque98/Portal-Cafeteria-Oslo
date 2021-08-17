@@ -1,0 +1,1608 @@
+/*estilos*/
+
+/*reset CSS*/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub1, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+    
+}
+
+/*Border BOX*/
+*{
+    box-sizing: border-box;
+} 
+/*--Estilos--*/
+
+/* Contenedor hijo 1: Inicio*/
+.seccion1 {
+
+    /*ancho del contenedor*/
+    min-width: 100%;
+    /*alto del contenedor*/
+    height: 100%;
+    /*margen del div*/
+    /*margin: auto;*/
+    /*Imgen de fondo*/
+    background-image: url(../Imagenes/Fondo1.jpg);
+    /*tamaño de imagen de fondo*/
+    background-size:800px 500px;
+    /*Posicion de imagen de fondo*/
+    background-position: center top;
+    /*No repita una imagen consecutiva del fondo*/
+    background-repeat: no-repeat;
+    /*minimo del alto de fondo*/
+    min-height: 500px;
+    display: block;
+
+}
+
+/* Tiulos Principales*/
+h1{
+    size: static;
+    /*Tipografia de la laetra*/
+    font-family: 'Open Sans', sans-serif;
+    /*Negrita del texto*/
+    font-weight: bold;
+    /*texto en el centro*/
+    text-align:center;
+    /*tamaño de letra*/
+    font-size: 40px;
+    /*color de letra*/
+    color: #f5f0ed;
+    /* decoracion del texto*/
+    text-decoration: none;
+    /*posicion del texto*/
+    position: absolute;
+    /*superior*/
+    top: 25%;
+    /*como modificar el parrafo del renglon*/
+    padding-left: 25px;
+    
+}
+
+/*separador de texto*/
+hr {
+    /*ancho de la linea*/
+    width: 200px;
+    /*color de la linea*/
+    background-color: #f5f0ed;
+}
+
+/*estilos del parrafo del div seccion1*/
+.seccion1 p{
+    /*tipo de visualizacion en bloque*/
+    display:block;
+    /*posicion*/
+    position: absolute;
+    /*alto*/
+    margin-top: 300px;
+    /*conteinido del texto en relacion del div*/
+    padding: 5%;
+    /*tipografia*/
+    font-family: 'Open Sans', sans-serif;
+    /*alieado del texto*/
+    text-align: center;
+    /*espaciado del texto*/
+    line-height: 1.5;
+    /*tamaño del texto*/
+    font-size: 16px;
+    /*color del texto*/
+    color: #f5f0ed;
+
+}
+/*Contenedor hijo para flotar menu a la izquierda*/
+.flotar {
+    
+    /*posicicion independiente a los demas lementos*/
+    position: absolute; 
+    /*alto del div*/
+    top: 85%;
+    /*margen superior*/
+    margin-top: 20%;
+    /*flotar a la derecha*/
+    float: right;
+    /*alto del div*/
+    top: 20px;
+    /*lado derecho */
+    right: auto;
+    /*color del fondo de menu*/
+    background-color: rgba(39, 24, 21, 0);
+    /*ancho del contenedor*/
+    width: 100%;
+    /*sin margen isquierda*/
+    margin-left: 0%;
+    /*sin espacio de relleno en los lados del elemento*/
+    padding: 0%;
+    /*margin-right: 3.2%;*/
+}
+
+
+/*Contenedor hijo para flotar el boton en la parte derecho*/
+.flotar-boton{
+    /*flotar el boton al lado derecho*/
+    float: right;
+    /*margen de la derecha */
+    margin-right: 5%;
+}
+
+
+/*Imagen logo*/
+#imagelogo {
+    /*flotar a la izquierda*/
+    float: left;
+    /*margenes superiores*/
+    margin-top: 30px;
+    /*margen izquierda*/
+    margin-left: 6.2%;
+    /*margen derecha*/
+    margin-right: 0%;
+}
+
+
+/*--------------menu------------*/
+
+/*-----First Movile-----*/
+
+/*Estilos de Boton*/
+.navBoton{
+    /*ancho del boton*/
+    width: 50px;
+    /*alto del boton*/
+    height: 50px;
+    /*tamaño*/
+    font-size: 14px;
+    /* margen superior*/
+    margin-top: 30px;
+    /*tipos de visualizacion ya sea bloque o en linea*/
+    display: inline-block;
+    /*color de fondo*/
+    background: #d03b40;
+    /*color de texto o icono*/
+    color:white;
+    /*padding: 10px 18px;*/
+    /*tipo de borde*/
+    border: 2px solid  #d03b40;
+    /*tipo de esquina del borde*/
+    border-radius: 5px;
+    /*contenido alineado en el centro*/
+    text-align: center;
+}
+
+/*enlaces*/
+a{
+    /*Tipografia de la laetra*/
+    font-family: 'Open Sans', sans-serif;
+}
+
+/*Estilo de los enclaces del menu*/
+.nav-enlace{
+    
+    /*tipos de visualizacion ya sea bloque o en linea*/
+    display: block;
+    /*color de fondo*/
+    background-color:#d03b40;
+    /*color de texto*/
+    color:#f5f0ed;
+    /*espacio de relleno en los lados del elemento*/
+    padding: 10px 30px;
+    /*margen derecha e izquierda*/
+    margin: 10px 0px;
+    /*tipo de esquina del borde*/
+    border-radius: 50px;
+    /*texto centrado*/
+    text-align: center;
+    /*sin linea abajo*/
+    text-decoration: none;
+}
+
+/*Estilo del puntero sobre los enlaces*/
+.nav-enlace:hover{
+    /*cuando el mouse pasa por encima del enlace*/
+    background-color:#eea1a4f1;
+}
+
+/*Estilo de etiqueta nav*/
+nav{
+    /*para que la caja no tenga bordes y queden una en una sola linea*/
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+/*clase para ocultar los enlaces en el menu*/
+.Desaparece{
+    display: none;
+}
+
+/*  Contenedor hijo 2: Brunch*/
+.seccion2 {
+    /*ancho de la pagina*/
+    width: 100%;
+    /*alto de la pagina*/
+    height: 100%;
+    /*fondo de la pagina*/
+    background-color:#d03b40;
+    /*minimo alto del fondo*/
+    min-height: 265px;
+    /*margenes del div*/
+    margin: auto;
+}
+
+
+/*titulo contenedor hijo2*/
+.seccion2 h2{
+    size: static;
+    /*tipografia de la letra*/
+    font-family: 'Open Sans', sans-serif;
+    /*negrita del texto*/
+    font-weight: bold;
+    /*texto en el centro*/
+    text-align: center;
+    /*tamaño de la letra*/
+    font-size: 28px;
+    /*color de la letra*/
+    color: #ded6c0;
+    /*decoracion del texto*/
+    text-decoration: none;
+    /*posicion del texto*/
+    position: absolute;
+    /*superior*/
+    margin-top: 15px;
+    /*espaciado del contenido del texto*/
+    padding: 5%;
+}
+
+/*parrafo del contenedor hijo 2*/
+.seccion2 p{
+
+    /*tipo de visualizacion en bloque*/
+    display: block;
+    /*posicion*/
+    position: absolute;
+    /*alto*/
+    margin-top: 120px;
+    /*contenido del texto realacionado al div*/
+    padding: 5%;
+    /*tipografia*/
+    font-family: 'Open Sans', sans-serif;
+    /*alineacion del texto*/
+    text-align: center;
+    /*Espaciado del texto*/
+    line-height: 1.5;
+    /*tamaño del texto*/
+    font-size: 16px;
+    /*color del texto*/
+    color: #ded6c0;
+
+}
+
+
+/* Contenedor hijo 3: Celebra tus fiestas*/
+.seccion3 {
+    /*ancho de la pagina*/
+    width: 100%;
+    /*alto de la pagina*/
+    height: 100%;
+    /*fondo de la pagina*/
+    background-color:#ded6c0;
+    /*minimo alto del fondo*/
+    min-height: 265px;
+    /*margenes del div*/
+    margin: auto;   
+} 
+
+/*titulo del contenedor hijo 3*/
+.seccion3 h2{
+
+    size: static;
+    /*tipografia de la letra*/
+    font-family: 'Open Sans', sans-serif;
+    /*negrita del texto*/
+    font-weight: bold;
+    /*texto en el centro*/
+    text-align: center;
+    /*tamaño de la letra*/
+    font-size: 28px;
+    /*color de la letra*/
+    color:#d03b40;
+    /*decoracion del texto*/
+    text-decoration: none;
+    /*posicion del texto*/
+    position: absolute;
+    /*superior*/
+    margin-top: 15px;
+    /*espaciado del contenido del texto*/
+    padding: 5%;
+}
+
+/*parrafo del contenedor hijo3*/
+.p0 > p{
+
+    /*tipo de visualizacion en bloque*/
+    display: block;
+    /*posicion*/
+    position: absolute;
+    /*alto*/
+    margin-top: 120px;
+    /*contenido del texto realacionado al div*/
+    padding: 5%;
+    /*tipografia*/
+    font-family: 'Open Sans', sans-serif;
+    /*alineacion del texto*/
+    text-align: center;
+    /*Espaciado del texto*/
+    line-height: 1.5;
+    /*tamaño del texto*/
+    font-size: 16px;
+    /*color del texto*/
+    color:#d03b40;
+}
+
+
+/* Contenedor hijo 4: Ven a desayunar*/
+.seccion4 {
+
+    /*ancho de la pagina*/
+    width: 100%;
+    /*alto de la pagina*/
+    height: 100%;
+    /*minimo alto del fondo*/
+    min-height: 450px;
+    /*margenes del div*/
+    margin: auto;
+    /*fondo de la pagina*/
+    background-image: url(../Imagenes/Fondo2.jpg);
+    /*tamañado de la imagen de fondo*/
+    background-size: 800px 500px;
+    /*posicion de la imagen*/
+    background-position: center left;
+    /*repeticion de la imagen*/
+    background-repeat: no-repeat;
+    /*posicion*/
+    position: relative;
+}
+
+/*titulo contenedor hijo 4*/
+.titulo0_4 h2{
+
+    /*posicion del texto*/
+    position: absolute;
+    /*superior*/
+    margin-top: 100px;
+    /*Margen de la izquierda*/
+    margin-left: 100px;
+    /*margen derecha*/
+    margin-right: 50px;
+    /*tamaño estatico*/
+    size: static;
+    /*tipografia de la letra*/
+    font-family: 'Open Sans', sans-serif;
+    /*negrita del texto*/
+    font-weight: bold;
+    /*texto en el centro*/
+    text-align: center;
+    /*tamaño de la letra*/
+    font-size: 28px;
+    /*color de la letra*/
+    color:#f5f0ed;
+    /*decoracion del texto*/
+    text-decoration: none;
+
+}
+
+/*parrafo del contenedor hijo4*/
+.p0_4 {
+
+    /*tipo de visualizacion en bloque*/
+    display: block;
+    /*posicion*/
+    position: absolute;
+    /*alto*/
+    margin-top: 170px;
+    /*contenido del texto realacionado al div*/
+    padding: 5%;
+    /*tipografia*/
+    font-family: 'Open Sans', sans-serif;
+    /*alineacion del texto*/
+    text-align: center;
+    /*Espaciado del texto*/
+    line-height: 1.5;
+    /*tamaño del texto*/
+    font-size: 16px;
+    /*color del texto*/
+    color:#f5f0ed;
+}
+
+/*pie de pagina contenedor hijo*/ 
+.pie0_4 {
+    /*posicion*/
+    position: absolute;
+    /*margen superior*/
+    margin-top: 300px;
+    /*margen izquierda*/
+    margin-left: 13%;
+    /*margen derecha*/
+    margin-right: 5%;
+    /*espaciado del texto entre la margen y el contenido*/
+    padding: 15px;
+    /*tipo de visualizacion: en linea*/
+    display: inline-block;
+    /*tamaño de letra*/
+    font-size: 16px;
+    /*color de la letra*/
+    color: #f5f0ed;
+    /*borde la caja del texto*/
+    border: 5px solid #f5f0ed;
+}
+
+/*titulo h3 en el contenedor hijo 4*/
+.pie0_4 h3{
+    /*alineacion del texto*/
+    text-align: center;
+    /*tipo de visualizacion: en linea*/
+    display: inline-block;
+    /*tipografia del texto*/
+    font-family: 'Open Sans', sans-serif;
+}
+
+/*linea del titulo contenedor hijo 4*/
+.titulo0_4 hr{
+    /*ancho de la linea*/
+    width: 100px;
+    /*color de la linea*/
+    background-color: #f5f0ed;
+}
+
+
+/* Contenedor hijo 5: pan recien echo*/
+.seccion5 {
+    /*ancho de la caja*/
+    min-width: 100%;
+    /*alto de la caja*/
+    height: 100%;
+    /*colo de fondo de la caja*/
+    background-color: #f5f0ed;
+    /*minimo de alto de la caja*/
+    min-height: 1095px;
+    /*margen centrada*/
+    margin-top:0px;
+}
+
+/*Imagen icono #1 contenedor hijo5*/
+#imge1 img {
+    /*minimo de ancho*/
+    min-width: 100px;
+    /*alto*/
+    height:100px;
+    /*margen derecha*/
+    margin-right: auto;
+    /*margen izquierda*/
+    margin-left: auto;
+     /*margen superior*/   
+    margin-top: 15px;
+    /*espaciado de la imagen*/
+    padding-left: 35%;
+    /*posicion*/
+    position: absolute;
+    /*tipo de visualizacion: en bloque*/
+    display: block;
+}
+/*titulo del icono #1 contendor hijo 5*/
+.seccion5 h3{
+    /*tipografia*/
+    font-family: 'Open Sans', sans-serif;
+    /*alineacion del texto*/
+    text-align: left;
+    /*tamaño de letra*/
+    font-size: 24px;
+    /*peso tipografico*/
+    font-weight: bold;
+    /*posicion*/
+    position: absolute;
+    /*margen superior*/
+    margin-top: 120px;
+    /*espaciado del texto izquierdo*/
+    padding-left: 25px;
+}
+/*parrafo del icono #1 contenedor hijo5*/
+.p1 > p{
+    /*posicion*/
+    position: absolute;
+    /*margen superior*/
+    margin-top: 150px;
+    /*espaciado del texto*/
+    padding-left: 25px;
+    /*tipografia*/
+    font-family: 'Open Sans', sans-serif;
+    /*alineacion del texto:izquierda*/
+    text-align: left;
+    /*tamaño del texto*/
+    font-size: 16px;
+}
+
+/*Imagen icono2 # contenedor hijo5*/
+#imge2 img{
+    /*anchura minima*/
+    min-width: 100px;
+    /*altura*/
+    height:100px;
+    /*margen derecha*/
+    margin-right: auto;
+    /*margen izquierda*/
+    margin-left: auto;
+    /*margen superior*/
+    margin-top:285px;
+    /*espaciado izquierdo*/
+    padding-left: 35%;
+    /*posicion*/
+    position: absolute;
+    /*tipo de visualizacion: en bloque*/
+    display: block;
+}
+/*titulo del icono #2 contendor hijo 5*/
+#titulo2{
+    /*margen superior*/
+    margin-top: 390px;
+}
+/*parrafo del icono #2 contenedor hijo5*/
+.p2 > p{
+    position: absolute;
+    margin-top: 420px;
+    padding-left: 25px;
+    font-family: 'Open Sans', sans-serif;
+    text-align: left;
+    font-size: 16px;
+}
+
+/*Imagen icono #3 contenedor hijo5*/
+#imge3 img{
+    /*minimo de ancho*/
+    min-width: 100px;
+    /*alto*/
+    height:100px;
+    /*margen derecho*/
+    margin-right: auto;
+    /*margen izquierdo*/
+    margin-left: auto;
+    /*espaciado izquierdo*/
+    padding-left: 35%;
+    /*margen superior*/
+    margin-top:550px;
+    /*posicion*/
+    position: absolute;
+    /*tipo de visualizacion*/
+    display: block;
+}
+/*titulo del icono #3 contendor hijo 5*/
+#titulo3{
+    /*margen superior*/
+    margin-top: 660px;
+}
+/*parrafo del icono #3 contenedor hijo5*/
+.p3 > p{
+    /*posicion*/
+    position: absolute;
+    /*margen superior*/
+    margin-top: 710px;
+    /*espaciado isquierdo*/
+    padding-left: 25px;
+    /*tipografia*/
+    font-family: 'Open Sans', sans-serif;
+    /*alineado del texto*/
+    text-align: left;
+    /*tamaño de tipografia*/
+    font-size: 16px;
+}
+
+/*Imagen icono #4 contenedor hijo5*/
+#imge4 img{
+    /*minimo de ancho*/
+    min-width: 100px;
+    /*altura*/
+    height:100px;
+    /*margen derecho*/
+    margin-right: auto;
+    /*margen izquierdo*/
+    margin-left: auto;
+    /*espaciado izquierdo*/
+    padding-left: 35%;
+    /*margen superior*/
+    margin-top:840px;
+    /*posicion*/
+    position: absolute;
+    /*tipo de visualizacion: bloque*/
+    display: block;
+}
+/*titulo del icono #4 contendor hijo 5*/
+#titulo4{
+    /*margen superior*/
+    margin-top: 950px; 
+}
+/*parrafo del icono #4 contenedor hijo5*/
+.p4 > p {
+    /*posicion*/
+    position: absolute;
+    /*margen superior*/
+    margin-top: 1005px;
+    /*espaciado izquierdo*/
+    padding-left: 25px;
+    /*tipografia*/
+    font-family: 'Open Sans', sans-serif;
+    /*alineacion del texto: izquierda*/
+    text-align: left;
+    /*tamaño del texto*/
+    font-size: 16px;
+}
+
+
+/* Contenedor hijo 6: Contacta con nosotros*/
+.seccion6{
+    /*ancho de la caja*/
+    width: 100%;
+    /*alto de la caja*/
+    height: 100%;
+    /*colo del fondo de la caja*/
+    background-color: #ded6c0;
+    /*minimo de alto*/
+    min-height: 265px;
+    /*margen cetrado*/
+    margin:auto;
+}
+/*titulo del contendor hijo6*/
+#titulo5 {
+    size: static;
+    /*tipografia de la letra*/
+    font-family: 'Open Sans', sans-serif;
+    /*negrita del texto*/
+    font-weight: bold;
+    /*texto en el centro*/
+    text-align: center;
+    /*tamaño de la letra*/
+    font-size: 28px;
+    /*color de la letra*/
+    color:#d03b40;
+    /*decoracion del texto*/
+    text-decoration: none;
+    /*posicion del texto*/
+    position: absolute;
+    /*superior*/
+    margin-top: 15px;
+    /*espaciado del contenido del texto*/
+    padding: 5%;
+}
+/*parrafo del contenedor hijo 6*/
+.p5 > p{
+    /*posicion*/
+    position: absolute;
+    /*margen superior*/
+    margin-top: 100px;
+    /*espaciado izquierdo*/
+    padding-left: 6px;
+    /*espaciado derecho*/
+    padding-right: 6px;
+    /*tipografia*/
+    font-family: 'Open Sans', sans-serif;
+    /*alineacion del texto*/
+    text-align: center;
+    /*tamaño del texto*/
+    font-size: 16px;
+    /*color del texto*/
+    color:#d03b40;
+}
+
+/* Contenedor hijo 7: Sabes donde estamos*/
+.seccion7{
+    /*ancho de la caja*/
+    width: 100%;
+    /*alto de la caja*/
+    height: 100%;
+    /*fondo de la caja*/
+    background-color: #d03b40;
+    /*minimo de alto*/
+    min-height: 265px;
+    /*margen*/
+    margin:auto;
+}
+/*titulo del contenedor hijo 7*/
+#titulo6 {
+    size: static;
+    /*tipografia de la letra*/
+    font-family: 'Open Sans', sans-serif;
+    /*negrita del texto*/
+    font-weight: bold;
+    /*texto en el centro*/
+    text-align: center;
+    /*tamaño de la letra*/
+    font-size: 28px;
+    /*color de la letra*/
+    color:#ded6c0;
+    /*decoracion del texto*/
+    text-decoration: none;
+    /*posicion del texto*/
+    position: absolute;
+    /*superior*/
+    margin-top: 15px;
+    /*espaciado del contenido del texto*/
+    padding: 5%;
+}
+/*parrafo del contenedor hijo 7*/
+.p6 > p{
+    /*posicion*/
+    position: absolute;
+    /*margen superior*/
+    margin-top: 120px;
+    /*espaciado izquerdo*/
+    padding-left: 150px;
+    /*espaciado derecho*/
+    padding-right: 6px;
+    /*tipografia*/
+    font-family: 'Open Sans', sans-serif;
+    /*alineacion del texto*/
+    text-align: center;
+    /*tamaño del texto*/
+    font-size: 16px;
+    /*color del texto*/
+    color:#ded6c0;
+}
+
+
+/* Contenedor hijo 8: fecha derechos*/
+.seccion8{
+    /*ancho*/
+    width: 100%;
+    /*alto*/
+    height: 100%;
+    /*color de fondo*/
+    background-color: #241d1b;
+    /*minimo de altura*/
+    min-height: 100px;
+    /*margen*/
+    margin:auto;
+}
+/*parrafo del contenedor hijo 8*/
+.p7 > p{
+    /*posicion*/
+    position: absolute;
+    /*margen superior*/
+    margin-top: 10%;
+    /*espaciado izquierdo*/
+    padding-left: 6px;
+    /*espaciado derecho*/
+    padding-right: 6px;
+    /*tipografia*/
+    font-family: 'Open Sans', sans-serif;
+    /*alineacion del texto*/
+    text-align: left;
+    /*tamaño de texto*/
+    font-size: 16px;
+    /*color del texto*/
+    color:#f5f0ed;
+}
+
+/* ----Finalización de los contenedores----*/
+
+/*----------------------------pantalla de tablet--------------------------------*/
+@media screen and (min-width:498px) and (max-width:900px){
+
+    /* Contenedor hijo 1: Inicio*/
+    .seccion1{
+        /*tamaño del fondo de pantalla*/
+        background-size: 902px 500px;
+    }
+    /*Contenedor hijo para flotar menu a la izquierda*/
+    .flotar{
+        /*sin margenes*/
+        margin: 0px;
+    }
+    /*imagen del logo*/
+    #imagelogo{
+        margin-right: 5px;
+        /*flotar a la izquierda*/
+        float: left;
+        /*margenes superiores*/
+        margin-top: 30px;
+        /*margen izquierda*/
+        margin-left: 10px;
+    }
+    /*--------menu------------*/
+    /*Estilo de los enclaces del menu*/
+    .nav-enlace{
+        /*margenes*/
+        margin: 2px 2px 5px 0px;
+        /*espaciado del texto*/
+        padding: 5px 3px;
+        /*para que el menu tenga cajas y funcione el flex*/
+        display: inline-block;
+        /*sin color de fondo*/
+        background-color: transparent;
+    }
+    /*estilos de etiqueta nav*/
+    nav{
+        /*alineacion del texto*/
+        text-align: center;
+        /*margen*/
+        margin: 20px 2px 5px 0px;
+        /*espaciado*/
+        padding: 10px;
+        /*posicionamiento flexbox para poner los enlaces uno al lado del otro*/
+        display: flex;
+        /*posicionar las cajas de forma horizontal en diferente formato*/
+        justify-content: flex-end;
+        flex-direction:row;
+    }
+    /*estilos de etiquite del boton*/
+    .navBoton{
+        display: none;
+    }
+
+    /*------------------------------------------*/  
+    /*cobtnedor padre creado para que floten las cajas*/
+    .contenedorPdre1{
+        /*anchura minima*/
+        min-width: 100%;
+        /*altura minima*/
+        min-height: 40%;
+        /*sin espacio de relleno*/
+        padding: 0px;
+        /*margen superior*/
+        margin-top: 0px;
+        /*margen derecha*/
+        margin-right: 0px;
+        /*margen inferior*/
+        margin-bottom: 50px;
+        /*posicion*/
+        position: absolute;
+        /*resetiar flotar*/
+        float: none;
+        /*fondo*/
+        background-color:transparent;
+        /*El contenido es recortado y no se muestran barras de posición.*/
+        overflow: hidden;
+    }
+
+
+    /*------------------------------------------*/  
+    /*  Contenedor hijo 2: Brunch*/
+    .seccion2{
+        /*ancho de la caja*/
+        width:33%;
+        /*alto de la caja*/
+        height: 100%;
+        /*altura minima de la caja*/
+        min-height: 465px;
+        /*flotar a la izquierda*/
+        float: left;
+        /*margen de la derecha*/
+        margin-right: 0px 10px;
+        /*espacio de relleno de la derecha*/
+        padding-right: 50px ;
+        /*posicion*/
+        position: relative;
+        /*ajuste del texto*/
+        overflow: hidden;
+        /*margen inferior*/
+        margin-bottom: 2%;
+
+    }
+
+    /* titulo contenedor hijo 2*/
+    .seccion2 h2{
+        /*tamaño de letra*/
+        font-size: 20px;
+        /*espacio de relleno*/
+        padding: 5px;
+        /*margen superior*/
+        margin-top: 15px;
+    }
+
+
+    /*------------------------------------------*/  
+    /* Contenedor hijo 3: Celebra tus fiestas*/
+    .seccion3{
+        /*ancho de la caja*/
+        width: 33%;
+        /*altura minima  de la caja*/
+        min-height: 465px;
+        /*flotar a la izquierda*/
+        float: left;
+        /*margen derecho*/
+        margin-right: 0px 10px;
+        /*posicion*/
+        position: relative;
+        /*espacio de relleno derecho*/
+        padding-right: 50px ;
+        /*ajuste del texto*/
+        overflow: hidden;
+        /*margen infeior*/
+        margin-bottom: 2%;
+        
+    }
+    /*titulo del contenerdo hijo 3*/
+    .seccion3 h2{
+        /*tamaño del texto*/
+        font-size: 20px;
+        /*espacio de relleno*/
+        padding: 5px;
+        /*margen superior*/
+        margin-top: 20px;
+    }
+    /*------------------------------------------*/  
+    /* Contenedor hijo 4: Ven a desayunar*/
+    .seccion4{
+        /*/ancho de la caja*/
+        width:34%;
+        /*minima altura de la caja*/
+        min-height: 465px;
+        /*flotar a la derecha*/
+        float: right;
+        /*margen derecha*/
+        margin-right: 0px 1px;
+        /*posicion*/
+        position: relative;
+        /*ajuste del texto*/
+        overflow: hidden;
+        /*margen inferior*/
+        margin-bottom: 2%;
+    }
+    /*titulo contenedor hijo4*/
+    .titulo0_4 h2{
+        margin-top: 40px;
+        margin-left: 40px;
+        font-size: 20px;
+    }
+    /*parrafo contenedor hijo 4*/
+    .p0_4 {
+        /*margen superior*/
+        margin-top: 100px;
+    }
+
+
+  /*------------------------------------------*/  
+  /* Contenedor hijo 5: pan recien echo*/
+    .seccion5{
+        /*ancho caja*/
+        width: 100%;
+        /*altura minima de la caja*/
+        min-height: 450px;
+        /*reset flotar*/
+        float: none;
+        /*posicion*/
+        position: relative;
+        /*limpiar los laterales*/
+        clear:both;
+        /*tipo de visualizacion*/
+        display: block;
+        /*margen superior*/
+        margin-top: 450px;
+    }
+    /*-----------------------*/
+    /*icono 1*/
+    #imge1 img {
+        /*flotar a la izquierda*/
+        float: left;
+        /*contenido del texto*/
+        padding-left: 6px;
+    }
+    /*titulo contendor 5*/
+    .seccion5 h3{
+        /*ancho del titulo*/
+        width: 25%;
+        /*tamaño de tipografia*/
+        font-size: 15px;
+        /*espaciado del texto*/
+        padding-left: 6px;
+    }
+    /*parrafo del icono1*/
+    .p1 > p{
+        /*ancho de la caja*/
+        width: 25%;
+        /*tamaño de tipografia*/
+        font-size: 14px;
+        /*espaciado del texto*/
+        padding: 5px 5px;
+    }
+    /*----------------------*/
+    /*icono 2*/
+    #imge2 img{
+        /*margen superior*/
+        margin-top: 15px;
+        /*flotar a la izquierda*/
+        float: left;
+        /*margen izquierda*/
+        margin-left: 25%;
+        /*espaciado del texto*/
+        padding-left: 5px;
+    }
+    /*titulo icono 2*/
+    #titulo2{
+        /*ancho de la caja*/
+        width: 25%;
+        /*flotar a la izquierda*/
+        float:left;
+        /*tamaño de la tipografia*/
+        font-size: 15px;
+        /*espaciado del texto*/
+        padding-left: 6px;
+        /*margen izquierda*/
+        margin-left: 25%;
+        /*margen superior*/
+        margin-top: 120px;
+    }
+    /*parrafo del icono 2*/
+    .p2 > p{
+        /*flotar a la izquierda*/
+        float: left;
+        /*margen superior*/
+        margin-top: 150px;
+        /*margen izquierda*/
+        margin-left: 25%;
+        /*ancho del texto*/
+        width: 25%;
+        /*tamaño del texto*/
+        font-size: 14px;
+        /*espaciado del texto*/
+        padding: 5px 5px;
+    }
+    /*----------------------*/
+    /*icono 3*/
+    #imge3 img{
+        /*margen superior*/
+        margin-top: 15px;
+        /*flotar a la izquierda*/
+        float: left;
+        /*margen a la izquierda*/
+        margin-left: 51%;
+        /*espaciado del texto*/
+        padding-left: 5px;
+    }
+    /*titulo icono 3*/
+    #titulo3{
+        /*ancho de la caja*/
+        width: 25%;
+        /*flotar la caja */
+        float:left;
+        /*tamaño de la tipografia*/
+        font-size: 15px;
+        /*espaciado del texto*/
+        padding-left: 6px;
+        /*margen izquierda*/
+        margin-left: 52%;
+        /*margen superior*/
+        margin-top: 120px;
+    }
+    /*parrafo icino3*/
+    .p3 > p{
+        /*flotar a la izquierda*/
+        float: left;
+        /*margen superior*/
+        margin-top: 160px;
+        /*margen izquierdo*/
+        margin-left: 52%;
+        /*ancho de la caja*/
+        width: 25%;
+        /*tamaño de tipografia*/
+        font-size: 14px;
+        /*espaciado de texto*/
+        padding: 5px 5px;
+    }
+    /*----------------------*/
+    /*icino 4*/
+    #imge4 img{
+        /*margen superior*/
+        margin-top: 15px;
+        /*flotar a la izquierda*/
+        float: left;
+        /*margen izquierdo*/
+        margin-left: 75%;
+        /*espaciado del texto*/
+        padding-left: 5px;
+    }
+    /*titulo icono 4*/
+    #titulo4{
+        /*ancho de la caja*/
+        width: 25%;
+        /*flotar a ala izquierda*/
+        float:left;
+        /*tamaño de la letra*/
+        font-size: 15px;
+        /*espaciado del texto*/
+        padding-left: 6px;
+        /*margen izquierdo*/
+        margin-left: 76%;
+        /*margen superior*/
+        margin-top: 120px;
+    }
+    /*texto icono 4*/
+    .p4 > p {
+        /*flotar a la izquierda*/
+        float: left;
+        /*margen superior*/
+        margin-top: 159px;
+        /*margen izquierdo*/
+        margin-left: 76%;
+        /*ancho del texto*/
+        width: 25%;
+        /*tamaño de la fuente*/
+        font-size: 14px;
+        /*espaciado del texto*/
+        padding: 5px 5px;  
+    }
+    /*------------------------------------------*/
+    /* Contenedor hijo 6: Contacta con nosotros*/
+    .seccion6{
+        /*flotar a la izquierda*/
+        float: left;
+        /*ancho de la caja*/
+        width: 50%;
+        /*margen derecho*/
+        margin-right:0px ;
+    } 
+    /*titulo contenedor 6*/
+    #titulo5 {
+        /*ancho de la caja*/
+        width: 50%;
+    }
+    /*parrafo contenedor 6*/
+    .p5 > p{
+        /*ancho de la caja*/
+        width: 50%;
+        /*margen superior*/
+        margin-top: 150px;
+    }
+    /*----------------------------------------*/
+    /* Contenedor hijo 7: Sabes donde estamos*/
+    .seccion7{
+        /*flotar a la izquierda*/
+        float: left;
+        /*ancho de la caja*/
+        width: 50%;
+    }
+    /*titulo contenedor 7*/
+    #titulo6 {
+        /*ancho de la caja*/
+        width: 50%; 
+    }
+    /*texto contenedor hijo 7*/
+    .p6 > p{
+        /*ancho de la caja*/
+        width: 50%;
+        /*margen izquierdo*/
+        margin-left:1%;
+        /*espaciado derecho*/
+        padding-left:0;
+    }
+    /*----------------------------------------*/
+    /* Contenedor hijo 8: fecha derechos*/
+    .seccion8{
+        /*flotar izquierda*/
+        float: left;
+        /*margen superior*/
+        margin-top: 0%;
+        
+    }
+
+}
+
+/*---------------------------------Pantalla de ordenador----------------------------------*/
+@media screen and (min-width:901px) and (max-width:3250px){
+    /* Contenedor hijo 1: Inicio*/
+    .seccion1{
+        /*tamaño del fondo*/
+        background-size: 2020px 1020px;
+    }
+
+    /*titulo del contenedor 1*/
+    h1{
+        /*ancho de la caja*/
+        width: 50%;
+        /*espaciado del texto*/
+        padding-left: 0px;
+        /*margen izquierdo*/
+        margin-left: 20%;
+        /*marge derecho*/
+        margin-right: auto;
+        
+    }
+    /*parrafo de la seccion 1*/
+    .seccion1 p{
+        /*ancho de la caja*/
+        width: 70%;
+        /*margen izquierda*/
+        margin-left: 10%;
+        /*margen superior*/
+        margin-top: 15%;
+        /*margen inferior*/
+        margin-bottom: 20%;
+    }
+    /*Contenedor hijo para flotar menu a la izquierda*/
+    .flotar{
+        /*sin margenes*/
+        margin: 0px;
+    }
+    /*imagen del logo*/
+    #imagelogo{
+        margin-right: 5px;
+        /*flotar a la izquierda*/
+        float: left;
+        /*margenes superiores*/
+        margin-top: 30px;
+        /*margen izquierda*/
+        margin-left: 40px;
+    }
+    /*--------menu------------*/
+    /*Estilo de los enclaces del menu*/
+    .nav-enlace{
+        /*margenes*/
+        margin: 10px 10px 10px 10px;
+        /*espaciado del texto*/
+        padding: 10px 30px;
+        /*para que el menu tenga cajas y funcione el flex*/
+        display: inline-block;
+        /*sin color de fondo*/
+        background-color: transparent;
+    }
+    /*estilos de etiqueta nav*/
+    nav{
+        /*alineacion del texto*/
+        text-align: center;
+        /*margen*/
+        margin: 20px 2px 5px 0px;
+        /*espaciado*/
+        padding: 10px;
+        /*posicionamiento flexbox para poner los enlaces uno al lado del otro*/
+        display: flex;
+        /*posicionar las cajas de forma horizontal en diferente formato*/
+        justify-content: flex-end;
+        flex-direction:row;
+    }
+    /*estilos de etiquite del boton*/
+    .navBoton{
+        display: none;
+    }
+    /*------------------------------------------------------------------------------------*/
+    /*caja padre creada para que las cajas puedan flotar*/
+    .contenedorPdre2{
+        /*minimo de acnho*/
+        min-width: 100%;
+        /*minimo de alto*/
+        min-height: 40%;
+        /*espaciado del texto*/
+        padding: 0px;
+        /*margen superior*/
+        margin-top: 0px;
+        /*margen derecho*/
+        margin-right: 0px;
+        /*margen inferior*/
+        margin-bottom: 50px;
+        /*posicion*/
+        position: absolute;
+        /*reset de flotar*/
+        float: none;
+        /*fondo*/
+        background-color:transparent;
+        /*ajuste del texto o contenido*/
+        overflow: hidden;
+    }
+    /*----------------------------------------------*
+    /*Contenedor hijo 2: Brunch*/
+    .seccion2 {
+        /*ancho de la caja*/
+        width: 50%;
+        /*alto de la caja*/
+        height: 300px;
+        /*flotar a la izquierda*/
+        float: left;
+        /*´posicion*/
+        position: relative;
+        /*margen*/
+        margin: 0px 0px;
+        /*margen inferior*/
+        margin-bottom: 2%;
+    }
+    /*----------------------------------------------*/
+    /* Contenedor hijo 3: Celebra tus fiestas*/
+    .seccion3{
+        /*ancho de la caja*/
+        width: 50%;
+        /*alto de la caja*/
+        height: 300px;
+        /*posicion relativa*/
+        position: relative;
+        /*flotar a la derecha*/
+        float: right;
+        /*margen*/
+        margin: 0px;
+        /*margen inferior*/
+        margin-bottom: 20%;
+    }
+    /*--------------------------------------------*/
+    /* Contenedor hijo 4: Ven a desayunar*/
+    .seccion4{
+        /*flotar*/
+        float:none;
+        /*margen superior*/
+        margin-top:300px;
+        /*tamaño del fondo*/
+        background-size: 1540px 1240px;
+    }
+    /*titulo del contenedor 4*/
+    .titulo0_4 h2{
+        /*ancho del texto*/
+        width: 50%;
+        /*margen izquierda*/
+        margin-left: 25%;
+        /*margen derecha*/
+        margin-right: 25%;
+    }
+    /*parrafo del contenedor 4*/
+    .p0_4 {
+        /*ancho de la caja*/
+        width: 50%;
+        /*margen izquierda*/
+        margin-left:25%;
+        /*margen derecho*/
+        margin-right: 25%;
+    }
+    /*caja del texto del inferior de la caja*/
+    .pie0_4 {
+        margin-top: 350px;
+        margin-left: 40%;
+        margin-right: 0;
+        padding: 5px;
+        display:flex;
+        justify-content: center;
+        flex-direction:row;
+    
+    }
+    /*titulo de la caja 4*/
+    .pie0_4 h3{
+        /*margen izquierda*/
+        margin-left: 25%;
+        /*matgen derecho*/
+        margin-right: 25%;
+    }
+    /*-----------------------------------------------------------*/
+    /* Contenedor hijo 5: pan recien echo*/
+    .seccion5{
+        /*minima altura*/
+        min-height: 700px;
+    }
+    /*icono 1*/
+    #imge1 img {
+        /*ancho de la caja*/
+        width: 200px;
+        /*altura de la caja */
+        height: 150px;
+        /*flotar a la izquierda*/
+        float: left;
+        /*margen superior*/
+        margin-top: 10%;
+        /*espaciado izquierdo*/
+        padding-left: 2%;
+    }
+    /*titulo icono 1*/
+    .seccion5 h3{
+        /*flotar*/
+        float: left;
+        /*margen izquierda*/
+        margin-left: 15%;
+    }
+    /*parrafo icono1*/
+    .p1 > p{
+        /*flotar */
+        float: left;
+        /*margen izquierdo*/
+        margin-left: 15%;
+    }
+    /*-------------------------------*/
+    /*icono 2*/
+    #imge2 img{
+        /*ancho de la caja*/
+        width: 200px;
+        /*alto de la caja*/
+        height: 150px;
+        /*flotar*/
+        float: left;
+        /*amrgen superior*/
+        margin-top: 9%;
+        /*espaciado del texto*/
+        padding-left: 2%;
+        /*margen izquierdo*/
+        margin-left: 50%;
+        /*margen derecho*/
+        margin-right: 1%;
+    }
+    /*titulo icono 2*/
+    #titulo2{
+        /*flotar*/
+        float: left;
+        /*margen izquierdo*/
+        margin-left: 65%;
+        /*margen superior*/
+        margin-top: 9%;
+    }
+    /*parrafo icino 2*/
+    .p2 > p{
+        /*flotar a la izquierda*/
+        float: left;
+        /*margen izquierda*/
+        margin-left: 65%;
+        /*margen superior*/
+        margin-top: 12%;
+ 
+    }
+    /*-------------------------*/
+    /*icono 3*/
+    #imge3 img{
+        /*ancho*/
+        width: 200px;
+        /*alto de la caja*/
+        height: 150px;
+        /*flotar a la izquierda*/
+        float: left;
+        /*margen superior*/
+        margin-top: 30%;
+        /*espaciado del texto*/
+        padding-left: 2%;
+    }
+    /*titulo icono 3*/
+    #titulo3{
+        /*flotar a la izquierda*/
+        float: left;
+        /*margen de la izquierda*/
+        margin-left: 15%;
+        /*margen superior*/
+        margin-top: 30%;
+    }
+    /*parrafo icono 3*/
+    .p3 > p{
+        /*flotar*/
+        float: left;
+        /*margen izquierdo*/
+        margin-left: 15%;
+        /*margen superior*/
+        margin-top: 33%; 
+    }
+    /*------------------------*/
+    /*icono 4*/
+    #imge4 img{
+        /*ancho */
+        width: 200px;
+        /*alto*/
+        height: 150px;
+        /*flotar */
+        float: left;
+        /*margen derecho*/
+        margin-top: 30%;
+        /*espaciado del texto*/
+        padding-left: 2%;
+        /*margin izquierdo*/
+        margin-left: 50%;
+        /*margen derecho*/
+        margin-right: 1%;
+    }
+    /*titulo icono4*/
+    #titulo4{
+        /*flotar a la izquierda*/
+        float: left;
+        /*margen izquierda*/
+        margin-left: 65%;
+        /*margen superior*/
+        margin-top: 30%
+    }
+    /*parrafo icono 4*/
+    .p4 > p {
+        /*flotar*/
+        float: left;
+        /*margen izquierdo*/
+        margin-left: 65%;
+        /*margen superior*/
+        margin-top: 33%;  
+    }
+    /*------------------------------------------------------------*/
+    /* Contenedor hijo 6: Contacta con nosotros*/
+    .seccion6{
+        /*flotar a la izquierda*/
+        float: left;
+        /*ancho de la caja*/
+        width: 50%;
+        /*matgen derecho*/
+        margin-right:0px ;
+    } 
+    /*titulo del contenedor*/
+        #titulo5 {
+        /*ancho del titulo*/
+        width: 50%;
+    }
+    /*parrafo del contenedor 6*/
+    .p5 > p{
+        /*ancho*/
+        width: 50%;
+        /*margen superior*/
+        margin-top: 150px;
+    }
+    /*----------------------------------------*/
+    /* Contenedor hijo 7: Sabes donde estamos*/
+    .seccion7{
+        /*flotar*/
+        float: left;
+        /*ancho de la caja*/
+        width: 50%;
+    }
+    /*titulo contenedor */
+    #titulo6 {
+        /*ancho del titulo*/
+        width: 50%; 
+    }
+    /*parrafo contenedor 7*/
+    .p6 > p{
+        /*ancho de la caja*/
+        width: 50%;
+        /*margen izquierdo*/
+        margin-left:1%;
+        /*espaciado izquierdo*/
+        padding-left:0;
+    }
+    /*-----------------------------------------------*/
+    /* Contenedor hijo 8: fecha derechos*/
+    .seccion8{
+        /*ancho de la caja*/
+        height: 150px;
+        /*flotar a la izquierda*/
+        float: left;
+        /*margen superior*/
+        margin-top: 0%;
+        /*tamaño del fondo*/
+        background-size: 100px 100px;
+    }
+     /*parrafo del contenedor */
+    .p7 > p{
+        /*margen superior*/
+        margin-top: 5%;
+    }
+}
