@@ -2,7 +2,7 @@
 
 Este proyecto desarrolla un portal publicitario de un sitio web tipo responsivo, en donde se emplean diferentesestilos y estructuras en CSS. En él se muestradiferentes aplicaciones de propiedades comofloat y positions, herramientas decorativastales como: fondos, sombras, tipografíasentre otras. Y se caracteriza por manejar unanavegación tipo responsiva con la aplicaciónde retículas flexibles y media queries pararesoluciones de Móvil, Tablet y Ordenador,además posee una interacción con javascript.
 
-![Imagen cafeteria Oslo](flatOSLOcafe.jpg)
+![Imagen cafeteria Oslo](presentacion/FlatOSLOcafe.png)
 
 
 ---
